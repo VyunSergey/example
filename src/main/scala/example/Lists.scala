@@ -57,7 +57,7 @@ object Lists {
       }
       else theMax
     }
-    maxElem(xs, 0)
+    maxElem(xs.tail, xs.head)
   }
 
   def min(xs: List[Int]): Int = {
@@ -69,6 +69,6 @@ object Lists {
       }
       else theMin
     }
-    minElem(xs, 0)
+    minElem(xs.tail, xs.head)
   }
 }
